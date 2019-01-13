@@ -11,45 +11,50 @@ class App extends Component {
             <a href="#" className="PageSwitcher__Item">Sign In</a>
             <a href="#" className="PageSwitcher__Item PageSwitcher__Item--Active">Sign Up</a>
           </div>
-        <div className="FormTitle">
-        <a href="#" className="FormTitle__Link">Sign In</a> or <a href="#"
-        className="FormTitle__Link FormTitle__Link--Active">Sign Up</a>
-        </div>
+          <div className="FormTitle">
+            <a href="#" className="FormTitle__Link">Sign In</a> or <a href="#"
+              className="FormTitle__Link FormTitle__Link--Active">Sign Up</a>
+          </div>
 
-        <div className="FormCenter">
-        <form className="FormFields" onSubmit={this.handleSubmit}>
-        <div className="FormField">
-        <label className="FormField__Label" htmlFor="name">
-          Full Name
+          <div className="FormCenter">
+            <form className="FormFields" onSubmit={this.handleSubmit}>
+              {/* full name */}
+              <div className="FormField">
+                <label className="FormField__Label" htmlFor="name">
+                  Full Name
         </label>
-        <input type="text" id="name" className="FormField__Input" placeholder="Enter your full name"
-        name="name"
-        />
-
-        </div>
-        <div className="FormField">
-        <label className="FormField__Label" htmlFor="password">
-        Password
+                <input type="text" id="name" className="FormField__Input" placeholder="Enter your full name"
+                  name="name"
+                />
+                {/* password */}
+              </div>
+              <div className="FormField">
+                <label className="FormField__Label" htmlFor="password">
+                  Password
         </label>
-        <input type="password" id="password" className="FormField__Input" placeholder="Enter password"
-        name="password"
-        />
-
-        </div>
-
-          <div className="FormField">
-        <label className="FormField__Label" htmlFor="email">
-        Email
+                <input type="password" id="password" className="FormField__Input" placeholder="Enter password"
+                  name="password"
+                />
+              </div>
+              {/* Email */}
+              <div className="FormField">
+                <label className="FormField__Label" htmlFor="email">
+                  Email
         </label>
-        <input type="email" id="email" className="FormField__Input" placeholder="Enter email"
-        name="email"
-        />
+                <input type="email" id="email" className="FormField__Input" placeholder="Enter email"
+                  name="email"
+                />
 
-        </div>
+              </div>
+              <label className="FormField__CheckboxLabel">
+                <input className="FormField__Checkbox" type="checkbox"
+                  name="hasAgreed" />I agree all statement in <a
+                    href="" className="FormField__TermsLink"
+                  >term of services</a>
+              </label>
+            </form>
 
-        </form>
-
-        </div>
+          </div>
         </div>
       </div>
     );
