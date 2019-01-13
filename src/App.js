@@ -46,12 +46,18 @@ class App extends Component {
                 />
 
               </div>
+              <div>
               <label className="FormField__CheckboxLabel">
                 <input className="FormField__Checkbox" type="checkbox"
                   name="hasAgreed" />I agree all statement in <a
                     href="" className="FormField__TermsLink"
                   >term of services</a>
               </label>
+              </div>
+              <div className="FormField">
+            <button className="FormField__Button mr-20">Sign Up</button> <a href="#"
+            className="FormField__Link">I'm already member</a>
+              </div>
             </form>
 
           </div>
